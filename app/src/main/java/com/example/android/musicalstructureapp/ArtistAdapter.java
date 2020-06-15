@@ -1,4 +1,4 @@
-package com.example.android.musical_structure_app;
+package com.example.android.musicalstructureapp;
 
 
 import android.app.Activity;

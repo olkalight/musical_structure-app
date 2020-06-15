@@ -1,4 +1,4 @@
-package com.example.android.musical_structure_app;
+package com.example.android.musicalstructureapp;
 
 
 import android.app.Activity;
@@ -9,47 +9,80 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class AlbumAdapter extends ArrayAdapter<Album> {
 
-    public AlbumAdapter(Activity context, List<Album> albums) {
+    AlbumAdapter(Activity context, List<Album> albums) {
         // Initialized AlbumAdapter internal storage for the context and the list_view
         super(context, 0, albums);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view
-        View albumItemView = convertView;
-        if (albumItemView == null) {
-            albumItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_album, parent, false);
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
+        // Initialise the holder
+        ViewHolder holder;
+        // If there is no existing view being reused
+        if (convertView == null) {
+            // Inflate the view
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_album, parent, false);
+            // Setup the holder
+            holder = new ViewHolder(convertView);
+            // Store the holder tag with the convertView
+            convertView.setTag(holder);
+        } else {
+            // otherwise use the holder instead of calling findViewById()
+            holder = (ViewHolder) convertView.getTag();
         }
         // Get the Album object located at this position in the list_view
-        final Album currentAlbum = getItem(position);
-
+        Album currentAlbum = getItem(position);
+        // Assign values if the object currentAlbum is not null
         if (currentAlbum != null) {
-            // Find the ImageView in the activity_album.xml layout with the ID album_picture_image_view
-            ImageView albumPictureImageView = albumItemView.findViewById(R.id.album_picture_image_view);
             // Get the album picture from the current Album object and set this picture on the ImageView
-            albumPictureImageView.setImageResource(currentAlbum.getAlbumDrawableId());
+            holder.albumDrawableId.setImageResource(currentAlbum.getAlbumDrawableId());
             // make sure that picture is visible
-            albumPictureImageView.setVisibility(View.VISIBLE);
-            // Find the TextView in the activity_album.xml layout with the ID album_title_text_view
-            TextView albumTextView = albumItemView.findViewById(R.id.album_title_text_view);
+            holder.albumDrawableId.setVisibility(View.VISIBLE);
             // Get the album title from the current Album object and set this text on the TextView
-            albumTextView.setText(currentAlbum.getAlbumName());
-            // Find the TextView in the activity_album.xml layout with the ID artist_name_text_view
-            TextView albumArtistTextView = albumItemView.findViewById(R.id.album_artist_name_text_view);
+            holder.albumTextView.setText(currentAlbum.getAlbumName());
             // Get the artist name from the current Album object and set this text on the TextView
-            albumArtistTextView.setText(currentAlbum.getArtist().getArtistName());
-            // Find the TextView in the activity_album.xml layout with the ID album_date_text_view
-            TextView albumDateTextView = albumItemView.findViewById(R.id.album_date_text_view);
+            holder.albumArtistTextView.setText(currentAlbum.getArtist().getArtistName());
             // Get the album date from the current Album object and set this text on the TextView
-            albumDateTextView.setText(currentAlbum.getAlbumDate());
+
+            holder.albumDateTextView.setText(currentAlbum.getAlbumDate());
         }
         // return activity_album layout
-        return albumItemView;
+        return convertView;
+    }
+
+    /**
+     * Create a class {@link ViewHolder} to hold/cache the exact set of views that we need.
+     * A {@link ViewHolder} object stores each of the component views inside the tag field of the
+     * Layout, so it can immediately be accessed without the need to look them up repeatedly.
+     */
+    static class ViewHolder {
+
+        // Find the ImageView in the activity_album.xml layout with the ID album_picture_image_view
+        @BindView(R.id.album_picture_image_view)
+        ImageView albumDrawableId;
+        // Find the TextView in the activity_album.xml layout with the ID album_title_text_view
+        @BindView(R.id.album_title_text_view)
+        TextView albumTextView;
+        // Find the TextView in the activity_album.xml layout with the ID album_artist_name_text_view
+        @BindView(R.id.album_artist_name_text_view)
+        TextView albumArtistTextView;
+        // Find the TextView in the activity_album.xml layout with the ID album_date_text_view
+        @BindView(R.id.album_date_text_view)
+        TextView albumDateTextView;
+
+        ViewHolder(View view) {
+            // Pass the view to ButterKnife to bind it
+            ButterKnife.bind(this, view);
+        }
     }
 }
