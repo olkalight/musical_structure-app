@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Musical Structure App</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="song_title">Song Title</string>
+    <string name="album_date">Album Date</string>
+    <string name="artist_picture">Artist picture</string>
+    <string name="album_picture">Album picture</string>
+    <string name="repeat_button">Repeat button</string>
+    <string name="previous_button">Previous button</string>
+    <string name="pause_button">Pause button</string>
+    <string name="next_button">Next button</string>
+    <string name="schuffle_button">Schuffle button</string>
 </resources>

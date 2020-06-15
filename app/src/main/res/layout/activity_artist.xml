@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_default"
+    tools:context=".ArtistActivity">
+
+        <ImageView
+            android:id="@+id/artist_picture_image_view"
+            style="@style/ArtistPicture"
+            android:src="@drawable/artists"
+            android:contentDescription="@string/artist_picture" />
+
+        <TextView
+            android:id="@+id/artist_name_text_view"
+            style="@style/ArtistName"
+            android:text="@string/artists" />
+
+</LinearLayout>

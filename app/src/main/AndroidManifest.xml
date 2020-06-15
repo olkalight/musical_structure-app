@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.musicalstructureapp">
+    package="com.example.android.musical_structure_app">
 
     <application
         android:allowBackup="true"
@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AlbumByArtistActivity" />
+        <activity android:name=".NowPlayingActivity" />
+        <activity android:name=".MusicLibrary" />
+        <activity android:name=".Album" />
+        <activity android:name=".AlbumAdapter" />
+        <activity android:name=".AlbumActivity" />
+        <activity android:name=".ArtistAdapter" />
+        <activity android:name=".ArtistActivity" />
+        <activity android:name=".Artist" />
+        <activity android:name=".Song" />
+        <activity android:name=".SongsAdapter" />
+        <activity
+            android:name=".SongsActivity"
+            android:label="Songs" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
