@@ -22,7 +22,7 @@ Udacity Android Basics Nanodegree Project No. 4: Musical Structure App
 
 Optional:
 
-Fist verion of app met project specifications, but due to the review suggestions and for practice purposes ButterKnife field and method binding for Android views was added as well as ViewHolders.  
+First verion of app met project specifications, but due to the review suggestions and for practice purposes ButterKnife field and method binding for Android views was added as well as ViewHolders.  
 
 
 #### App Screenshots 
