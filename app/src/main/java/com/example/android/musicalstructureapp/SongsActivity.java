@@ -10,12 +10,21 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class SongsActivity extends AppCompatActivity {
+
+    @BindView(R.id.listView)
+    ListView song;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
+
+        // Bind the view using ButterKnife
+        ButterKnife.bind(this);
 
         final List<Song> songs;
         // get the album position sent through the Intent
@@ -27,22 +36,17 @@ public class SongsActivity extends AppCompatActivity {
         else songs = MusicLibrary.getInstance().getAlbums().get(albumPosition).getSongs();
         // Create a SongAdapter with list_view of Songs data source
         SongsAdapter adapter = new SongsAdapter(this, songs);
-        // find the ListView
-        ListView song = (ListView) findViewById(R.id.list_view);
         // Make the List View use the SongsAdapter created above,
         // so that the listView song will display the song item for each song in the list_view
         song.setAdapter(adapter);
         // Set onClickListener to selected item from the list_view
-        song.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
+        song.setOnItemClickListener((parent, view, position, l) -> {
 
-                Song selectedSong = songs.get(position);
+            Song selectedSong = songs.get(position);
 
-                Intent songIntent = new Intent(SongsActivity.this, NowPlayingActivity.class);
-                songIntent.putExtra("SELECTED-SONG", selectedSong);
-                startActivity(songIntent);
-            }
+            Intent songIntent = new Intent(SongsActivity.this, NowPlayingActivity.class);
+            songIntent.putExtra("SELECTED-SONG", selectedSong);
+            startActivity(songIntent);
         });
     }
 }

@@ -25,20 +25,20 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
 
     @NonNull
     @Override
-    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position, View albumItemView, @NonNull ViewGroup parent) {
         // Initialise the holder
         ViewHolder holder;
         // If there is no existing view being reused
-        if (convertView == null) {
+        if (albumItemView == null) {
             // Inflate the view
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_album, parent, false);
+            albumItemView = LayoutInflater.from(getContext()).inflate(R.layout.activity_album, parent, false);
             // Setup the holder
-            holder = new ViewHolder(convertView);
-            // Store the holder tag with the convertView
-            convertView.setTag(holder);
+            holder = new ViewHolder(albumItemView);
+            // Store the holder tag with the albumItemView
+            albumItemView.setTag(holder);
         } else {
             // otherwise use the holder instead of calling findViewById()
-            holder = (ViewHolder) convertView.getTag();
+            holder = (ViewHolder) albumItemView.getTag();
         }
         // Get the Album object located at this position in the list_view
         Album currentAlbum = getItem(position);
@@ -57,7 +57,7 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
             holder.albumDateTextView.setText(currentAlbum.getAlbumDate());
         }
         // return activity_album layout
-        return convertView;
+        return albumItemView;
     }
 
     /**

@@ -826,8 +826,8 @@ int id left 0x7f070070
 int id line1 0x7f070071
 int id line3 0x7f070072
 int id listMode 0x7f070073
-int id list_item 0x7f070074
-int id list_view 0x7f070075
+int id listView 0x7f070074
+int id list_item 0x7f070075
 int id message 0x7f070076
 int id middle 0x7f070077
 int id multiply 0x7f070078
