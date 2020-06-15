@@ -1,7 +1,7 @@
 ## Musical Structure App
 Udacity Android Basics Nanodegree Project No. 4: Musical Structure App
 
-<b>PROJECT SPECIFICATION</b>
+<b>PROJECT SPECIFICATIONS</b>
 
 1. The app’s structure is suitable for a music player app.
 
@@ -25,8 +25,7 @@ Optional:
 Fist verion of app met project specifications, but due to the review suggestions and for practice purposes ButterKnife field and method binding for Android views was added as well as ViewHolders.  
 
 
-#### App Images 
-App Screenshots 
+#### App Screenshots 
 
 <img src = "Screenshots/Screenshot1.png" width="250px" height="450px"> <img src = "Screenshots/Screenshot2.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot3.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot4.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot5.png" width="250px" height="450px" >
 
