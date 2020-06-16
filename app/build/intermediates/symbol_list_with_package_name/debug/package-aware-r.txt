@@ -1014,6 +1014,10 @@ string albums
 string app_name
 string artist_picture
 string artists
+string category_albums
+string category_artists
+string category_now_playing
+string category_songs
 string next_button
 string pause_button
 string previous_button

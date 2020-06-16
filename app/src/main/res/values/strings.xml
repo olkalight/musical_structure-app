@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Musical Structure App</string>
+    <string name="category_songs">Songs</string>
+    <string name="category_albums">Albums</string>
+    <string name="category_artists">Artists</string>
+    <string name="category_now_playing">Now Playing</string>
     <string name="songs">Songs</string>
     <string name="albums">Albums</string>
     <string name="artists">Artists</string>

@@ -1,0 +1,35 @@
+com/example/android/musicalstructureapp/Song.java
+ com.example.android.musicalstructureapp.Song
+ com.example.android.musicalstructureapp.Song$1
+com/example/android/musicalstructureapp/AlbumActivity.java
+ com.example.android.musicalstructureapp.AlbumActivity
+ com.example.android.musicalstructureapp.AlbumActivity$1
+com/example/android/musicalstructureapp/Album.java
+ com.example.android.musicalstructureapp.Album
+ com.example.android.musicalstructureapp.Album$1
+com/example/android/musicalstructureapp/BuildConfig.java
+ com.example.android.musicalstructureapp.BuildConfig
+com/example/android/musicalstructureapp/ArtistAdapter.java
+ com.example.android.musicalstructureapp.ArtistAdapter
+ com.example.android.musicalstructureapp.ArtistAdapter$ViewHolder
+com/example/android/musicalstructureapp/AlbumAdapter.java
+ com.example.android.musicalstructureapp.AlbumAdapter
+ com.example.android.musicalstructureapp.AlbumAdapter$ViewHolder
+com/example/android/musicalstructureapp/MainActivity.java
+ com.example.android.musicalstructureapp.MainActivity
+com/example/android/musicalstructureapp/Artist.java
+ com.example.android.musicalstructureapp.Artist
+ com.example.android.musicalstructureapp.Artist$1
+com/example/android/musicalstructureapp/MusicLibrary.java
+ com.example.android.musicalstructureapp.MusicLibrary
+com/example/android/musicalstructureapp/SongsAdapter.java
+ com.example.android.musicalstructureapp.SongsAdapter
+ com.example.android.musicalstructureapp.SongsAdapter$ViewHolder
+com/example/android/musicalstructureapp/AlbumByArtistActivity.java
+ com.example.android.musicalstructureapp.AlbumByArtistActivity
+com/example/android/musicalstructureapp/ArtistActivity.java
+ com.example.android.musicalstructureapp.ArtistActivity
+com/example/android/musicalstructureapp/SongsActivity.java
+ com.example.android.musicalstructureapp.SongsActivity
+com/example/android/musicalstructureapp/NowPlayingActivity.java
+ com.example.android.musicalstructureapp.NowPlayingActivity

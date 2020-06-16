@@ -11,11 +11,11 @@
 9-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:5:5-33:19
+11-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:5:5-51:19
 12        android:allowBackup="true"
 12-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] /Users/ola/.gradle/caches/transforms-2/files-2.1/da95e0dd41fd0c634661df2a0f122634/core-1.1.0/AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] /Users/ola/.gradle/caches/transforms-2/files-2.1/6fab4fd7198bf1573cc0e6ec6c18b01f/core-1.1.0/AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:7:9-43
@@ -28,59 +28,91 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.android.musicalstructureapp.AlbumByArtistActivity" />
-21-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:12:9-59
-21-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:12:19-56
-22        <activity android:name="com.example.android.musicalstructureapp.NowPlayingActivity" />
-22-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:13:9-56
-22-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:13:19-53
-23        <activity android:name="com.example.android.musicalstructureapp.MusicLibrary" />
-23-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:14:9-50
-23-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:14:19-47
-24        <activity android:name="com.example.android.musicalstructureapp.Album" />
-24-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:15:9-43
-24-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:15:19-40
-25        <activity android:name="com.example.android.musicalstructureapp.AlbumAdapter" />
-25-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:16:9-50
-25-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:16:19-47
-26        <activity android:name="com.example.android.musicalstructureapp.AlbumActivity" />
-26-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:17:9-51
-26-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:17:19-48
-27        <activity android:name="com.example.android.musicalstructureapp.ArtistAdapter" />
-27-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:18:9-51
-27-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:18:19-48
-28        <activity android:name="com.example.android.musicalstructureapp.ArtistActivity" />
-28-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:19:9-52
-28-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:19:19-49
-29        <activity android:name="com.example.android.musicalstructureapp.Artist" />
-29-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:20:9-44
-29-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:20:19-41
-30        <activity android:name="com.example.android.musicalstructureapp.Song" />
-30-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:21:9-42
-30-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:21:19-39
-31        <activity android:name="com.example.android.musicalstructureapp.SongsAdapter" />
-31-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:22:9-50
-31-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:22:19-47
-32        <activity
-32-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:23:9-25:37
-33            android:name="com.example.android.musicalstructureapp.SongsActivity"
-33-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:24:13-42
-34            android:label="Songs" />
-34-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:25:13-34
-35        <activity android:name="com.example.android.musicalstructureapp.MainActivity" >
-35-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:26:9-32:20
-35-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:26:19-47
-36            <intent-filter>
-36-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:27:13-31:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:28:17-69
-37-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:28:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:30:17-77
-39-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:30:27-74
-40            </intent-filter>
-41        </activity>
-42    </application>
-43
-44</manifest>
+21        <activity android:name="com.example.android.musicalstructureapp.MainActivity" >
+21-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:12:9-18:20
+21-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:12:19-47
+22            <intent-filter>
+22-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:14:17-69
+23-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:16:17-77
+25-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:19:9-23:58
+29            android:name="com.example.android.musicalstructureapp.SongsActivity"
+29-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:20:13-42
+30            android:label="@string/category_songs"
+30-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:21:13-51
+31            android:launchMode="singleTop"
+31-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:22:13-43
+32            android:parentActivityName="com.example.android.musicalstructureapp.MainActivity" />
+32-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:23:13-55
+33        <activity
+33-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:24:9-28:58
+34            android:name="com.example.android.musicalstructureapp.AlbumActivity"
+34-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:25:13-42
+35            android:label="@string/category_albums"
+35-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:26:13-52
+36            android:launchMode="singleTop"
+36-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:27:13-43
+37            android:parentActivityName="com.example.android.musicalstructureapp.MainActivity" />
+37-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:28:13-55
+38        <activity
+38-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:29:9-33:60
+39            android:name="com.example.android.musicalstructureapp.AlbumByArtistActivity"
+39-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:30:13-50
+40            android:label="@string/category_albums"
+40-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:31:13-52
+41            android:launchMode="singleTop"
+41-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:32:13-43
+42            android:parentActivityName="com.example.android.musicalstructureapp.ArtistActivity" />
+42-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:33:13-57
+43        <activity
+43-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:34:9-38:58
+44            android:name="com.example.android.musicalstructureapp.ArtistActivity"
+44-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:35:13-43
+45            android:label="@string/category_artists"
+45-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:36:13-53
+46            android:launchMode="singleTop"
+46-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:37:13-43
+47            android:parentActivityName="com.example.android.musicalstructureapp.MainActivity" />
+47-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:38:13-55
+48        <activity
+48-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:39:9-43:59
+49            android:name="com.example.android.musicalstructureapp.NowPlayingActivity"
+49-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:40:13-47
+50            android:label="@string/category_now_playing"
+50-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:41:13-57
+51            android:launchMode="singleTop"
+51-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:42:13-43
+52            android:parentActivityName="com.example.android.musicalstructureapp.AlbumActivity" />
+52-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:43:13-56
+53        <activity android:name="com.example.android.musicalstructureapp.MusicLibrary" />
+53-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:44:9-50
+53-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:44:19-47
+54        <activity android:name="com.example.android.musicalstructureapp.Album" />
+54-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:45:9-43
+54-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:45:19-40
+55        <activity android:name="com.example.android.musicalstructureapp.AlbumAdapter" />
+55-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:46:9-50
+55-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:46:19-47
+56        <activity android:name="com.example.android.musicalstructureapp.ArtistAdapter" />
+56-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:47:9-51
+56-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:47:19-48
+57        <activity android:name="com.example.android.musicalstructureapp.Artist" />
+57-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:48:9-44
+57-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:48:19-41
+58        <activity android:name="com.example.android.musicalstructureapp.Song" />
+58-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:49:9-42
+58-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:49:19-39
+59        <activity android:name="com.example.android.musicalstructureapp.SongsAdapter" />
+59-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:50:9-50
+59-->/Users/ola/Documents/GitHub/musical_structure-app/app/src/main/AndroidManifest.xml:50:19-47
+60    </application>
+61
+62</manifest>

@@ -9,20 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlbumByArtistActivity" />
-        <activity android:name=".NowPlayingActivity" />
-        <activity android:name=".MusicLibrary" />
-        <activity android:name=".Album" />
-        <activity android:name=".AlbumAdapter" />
-        <activity android:name=".AlbumActivity" />
-        <activity android:name=".ArtistAdapter" />
-        <activity android:name=".ArtistActivity" />
-        <activity android:name=".Artist" />
-        <activity android:name=".Song" />
-        <activity android:name=".SongsAdapter" />
-        <activity
-            android:name=".SongsActivity"
-            android:label="Songs" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SongsActivity"
+            android:label="@string/category_songs"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlbumActivity"
+            android:label="@string/category_albums"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlbumByArtistActivity"
+            android:label="@string/category_albums"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ArtistActivity" />
+        <activity
+            android:name=".ArtistActivity"
+            android:label="@string/category_artists"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/category_now_playing"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AlbumActivity" />
+        <activity android:name=".MusicLibrary" />
+        <activity android:name=".Album" />
+        <activity android:name=".AlbumAdapter" />
+        <activity android:name=".ArtistAdapter" />
+        <activity android:name=".Artist" />
+        <activity android:name=".Song" />
+        <activity android:name=".SongsAdapter" />
     </application>
 
 </manifest>
