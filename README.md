@@ -32,5 +32,5 @@ First verion of app met project specifications, but due to the review suggestion
 #### App Screenshots 
 
 
-
+<img src = "Screenshots/Screenshot1.png" width="250px" height="450px"> <img src = "Screenshots/Screenshot2.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot3.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot4.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot5.png" width="250px" height="450px" >
 
